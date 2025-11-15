@@ -1,5 +1,5 @@
 """
-VITS TTS 插件
+GPT-SoVITS-V2 TTS 插件
 
 基于本地 GPT-SoVITS-V2 API 的文本转语音插件，支持多种语言、手动命令/自动模式。
 解决点：统一插件实例获取方式，彻底解决 'get_plugin' 不存在的问题。
@@ -24,7 +24,7 @@ logger = get_logger("vits_tts_plugin")
 
 # ===== 共享工具类：VITS API 调用封装 =====
 class VitsAPIClient:
-    """VITS API客户端，统一处理语音合成请求"""
+    """GPT-SoVITS-V2 API客户端，统一处理语音合成请求"""
 
     @staticmethod
     async def call_vits_api(api_url: str, text: str, voice_id: str, language: str, ref_audio_path: str, timeout: int) -> \
