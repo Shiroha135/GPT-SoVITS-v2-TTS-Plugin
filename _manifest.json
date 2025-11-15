@@ -1,15 +1,15 @@
 {
   "manifest_version": 1,
   "name": "语音合成插件 (GPT-SoVITS-V2 本地版)",
-  "version": "6.2.0",
+  "version": "1.18.14",
   "description": "基于本地 GPT-SoVITS-V2 API 的文本转语音插件，支持多种语言和音色，为 MaiCore 提供高质量的语音合成功能。",
   "author": {
     "name": "HatsuyukiAya初雪绫",
     "url": ""
   },
   "license": "MIT",
-  "homepage_url": "",
-  "repository_url": "",
+  "homepage_url": "https://github.com/Shiroha135",
+  "repository_url": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin",
   "keywords": [
     "TTS",
     "语音合成",
@@ -40,7 +40,7 @@
       {
         "type": "action",
         "name": "vits_tts_action",
-        "description": "智能语音合成Action，支持关键词自动触发，使用本地 GPT-SoVITS-V2 模型将文本转换为语音"
+        "description": "智能语音合成Action，支持开关全局模式，使用本地 GPT-SoVITS-V2 模型将文本转换为语音"
       },
       {
         "type": "command",
