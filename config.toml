@@ -1,0 +1,52 @@
+# vits_tts_plugin - 自动生成的配置文件
+# 基于本地 GPT-SoVITS-V2 API 的文本转语音插件，支持多种语言和音色，为 MaiCore 提供高质量的语音合成功能。
+
+# 插件基本配置
+[plugin]
+
+# 是否启用插件
+enabled = true
+
+
+# 组件启用控制
+[components]
+
+# 是否启用Action组件
+action_enabled = true
+
+# 是否启用Command组件
+command_enabled = true
+
+# 控制 /vitsmode 命令是否可用
+mode_command_enabled = true
+
+
+# VITS API配置
+[vits]
+
+# VITS API地址 (例如: http://localhost:9880/)
+api_url = "http://localhost:9880/"
+
+# 默认音色ID (整数)
+default_voice_id = "0"
+
+# 默认语言（zh/en/ja等）
+language = "zh"
+
+# 关键：填写中文目录下的音频绝对路径（路径分隔符用 / 或 \\）换音色：直接替换 “参考音频” 目录下的 WAV 文件，更新 config.toml 中的 ref_audio_path 即可
+ref_audio_path = "D:/下载/GPT-SoVITS-v2-SillyTavern/GPT-SoVITS-v2/参考音频/[gakki]ホットするっていうかそれはあの.wav"
+
+# API请求超时时间（秒）
+timeout = 60
+
+# 最大文本长度限制
+max_text_length = 500
+
+# API调用失败重试次数
+retry_count = 2
+
+# 音频文件格式
+audio_format = "wav"
+
+
+
