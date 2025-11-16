@@ -1,4 +1,4 @@
-# _🎤 GPT-soVITS-V2 TTS 插件说明文档_
+# _🎤 VITS TTS 插件说明文档_
 
 ## 一、📢 _插件介绍_
 
@@ -167,7 +167,11 @@ _确认已发送 /vitsmode on 开启自动模式；
 检查 config.toml 中 mode_command_enabled 参数是否为 true；
 确保发送的消息为纯文本（不含图片、表情等非文本内容）。_
 # 七、📜 版本更新记录
-## v1.8.14（最新版）🚀
+## v1.8.15 🐛（最新版）
+_修复自动模式下特殊符号（如emoji、特殊标点）导致合成失败的问题；
+新增文本预处理过滤功能，自动清理无效字符，提高合成稳定性。_
+
+## v1.8.14 🚀
 _统一插件实例获取方式，修复 get_plugin 方法不存在的问题；
 优化配置验证逻辑，添加参考音频路径有效性检查；
 增强日志输出，方便排查合成失败原因。_
@@ -195,5 +199,5 @@ _本插件仅用于文本转语音功能，请勿用于非法或违规内容的�
 ## _本项目遵循 <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: #4183c4;">MIT 许可证</a> 开源_
 # 十、📞 联系方式
 ## 若遇到问题或需要功能扩展，可通过以下方式反馈：
-### GitHub 仓库：[<a href="https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin/" target="_blank" style="color: #4183c4;">点我进入</a>>]
+### GitHub 仓库：[待补充]
 ### QQ:751732347

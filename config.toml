@@ -31,10 +31,10 @@ api_url = "http://localhost:9880/"
 default_voice_id = "0"
 
 # 默认语言（zh/en/ja等）
-language = "zh"
+language = "ja"
 
 # 关键：填写中文目录下的音频绝对路径（路径分隔符用 / 或 \\）换音色：直接替换 “参考音频” 目录下的 WAV 文件，更新 config.toml 中的 ref_audio_path 即可
-ref_audio_path = "D:/下载/GPT-SoVITS-v2-SillyTavern/GPT-SoVITS-v2/参考音频/[gakki]ホットするっていうかそれはあの.wav"
+ref_audio_path = "E:\\GPT-SoVITS-v2-SillyTavern\\GPT-SoVITS-v2\\参考音频\\[hotaru]まことさんたちって、里でコミュニケーション全然とってないから、.ogg"
 
 # API请求超时时间（秒）
 timeout = 60
