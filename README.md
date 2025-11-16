@@ -199,5 +199,5 @@ _本插件仅用于文本转语音功能，请勿用于非法或违规内容的�
 ## _本项目遵循 <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: #4183c4;">MIT 许可证</a> 开源_
 # 十、📞 联系方式
 ## 若遇到问题或需要功能扩展，可通过以下方式反馈：
-### GitHub 仓库：[待补充]
+### GitHub 仓库：[<a href="[https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin" target="_blank" style="color: #4183c4;">点我进入</a>]
 ### QQ:751732347
