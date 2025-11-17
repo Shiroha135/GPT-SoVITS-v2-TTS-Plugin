@@ -1,9 +1,6 @@
 """
 GPT-soVITS-V2_TTS_Plugin_Fixed
-修改说明：
-1. 增加了手动清理缓存命令 /vitsclean
-2. 增加了自动TTS概率控制功能
-3. 更新插件名称和作者信息
+
 """
 
 from typing import List, Tuple, Type, Optional, Dict
