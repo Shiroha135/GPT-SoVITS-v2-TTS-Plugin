@@ -4,8 +4,8 @@
   "name": "GPT-SoVITS V2 TTS",
   "description": "基于本地 GPT-SoVITS V2 API 的文本转语音插件，支持 /vits 命令和关键词语音触发。",
   "author": {
-    "name": "HatsuyukiAya",
-    "url": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin"
+    "name": "HatsuYukiAya初雪绫",
+    "url": "https://github.com/Shiroha135"
   },
   "license": "MIT",
   "urls": {
