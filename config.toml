@@ -4,11 +4,14 @@
 # 插件基本配置
 [plugin]
 
+# 配置版本
+config_version = "3.2.0"
+
 # 是否启用插件
 enabled = true
 
-
 # 组件启用控制
+
 [components]
 
 # 是否启用Action组件
@@ -20,21 +23,25 @@ command_enabled = true
 # 控制 /vitsmode 命令是否可用
 mode_command_enabled = true
 
-
 # VITS API配置
+
 [vits]
 
-# VITS API地址 (例如: http://localhost:9880/)
+# VITS API地址。可填 http://localhost:9880/；如果该地址 404，插件会自动尝试 /tts
 api_url = "http://localhost:9880/"
 
 # 默认音色ID (整数)
 default_voice_id = "0"
 
 # 默认语言（zh/en/ja等）
-language = "ja"
+language = "zh"
 
-# 关键：填写中文目录下的音频绝对路径（路径分隔符用 / 或 \\）换音色：直接替换 “参考音频” 目录下的 WAV 文件，更新 config.toml 中的 ref_audio_path 即可
-ref_audio_path = "E:\\GPT-SoVITS-v2-SillyTavern\\GPT-SoVITS-v2\\参考音频\\[hotaru]まことさんたちって、里でコミュニケーション全然とってないから、.ogg"
+# 关键：填写参考音频绝对路径（路径分隔符用 / 或 \\）
+# 例如：D:\\GPT-SoVITS-v2\\参考音频\\example.wav
+ref_audio_path = ""
+
+# 参考音频文本，旧接口不用也可以留空
+prompt_text = ""
 
 # API请求超时时间（秒）
 timeout = 60
@@ -47,6 +54,18 @@ retry_count = 2
 
 # 音频文件格式
 audio_format = "wav"
+auto_language_rewrite = true
+language_rewrite_model = "utils"
+block_on_language_rewrite_failure = true
+keyword_trigger_enabled = true
+keyword_trigger_phrases = "再发一句语音,再来一句语音,发语音,发一句语音,来句语音,来一句语音,再说一句,再说句话,说句话,说一句,念一句,朗读,念出来,用语音说,语音说"
+keyword_default_text = "行吧，就再说一句。测试到这里差不多了。"
 
+[cache]
 
+# 缓存保留时间（分钟）
+expire_minutes = 30
+
+# 缓存最大容量（MB）
+max_size_mb = 100
 

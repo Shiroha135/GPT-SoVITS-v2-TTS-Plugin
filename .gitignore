@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+logs/
+tts_audio_cache/
+config_back/
+
+.env
+.venv/
+venv/
