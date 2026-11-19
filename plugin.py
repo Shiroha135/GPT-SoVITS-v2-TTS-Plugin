@@ -345,7 +345,11 @@ class GPTSoVITSV2TTSPlugin(MaiBotPlugin):
         if not ref_path:
             self.ctx.logger.warning("未配置参考音频路径 vits.ref_audio_path")
             return None
-        if not os.path.exists(ref_path):
+        # 远程 API 场景下参考音频在服务端，本地路径检查无意义
+        is_local_api = any(h in api_url for h in ("127.0.0.1", "localhost", "0.0.0.0")) for api_url in api_urls
+        if not any(is_local_api) and not os.path.exists(ref_path):
+            self.ctx.logger.info("参考音频本地不存在(远程API): %s", ref_path)
+        elif not os.path.exists(ref_path):
             self.ctx.logger.warning("参考音频不存在: %s", ref_path)
             return None
 
